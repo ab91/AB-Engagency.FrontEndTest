@@ -10,4 +10,5 @@ Start by creating a fork of this repository in BitBucket and create a branch for
 - Understanding of the instructions and attention to detail, getting as close to the mockups as possible.
 - Clean readable code that would be easy to maintain upon hand-off.
 - Responsiveness and cross-browser compatibility.
+- Resolved issues and improvment in HTML code.
 
