@@ -1,0 +1,64 @@
+{
+  "name": "ab-engagency.frontendtest",
+  "version": "1.0.0",
+  "eslintConfig": {
+    "root": true,
+    "parser": "babel-eslint",
+    "extends": [
+      "airbnb"
+    ]
+  },
+  "description": "Coding Test for Engagency",
+  "main": "index.js",
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "react-dom": "^16.14.0",
+    "react": "^16.14.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.0",
+    "cypress": "^5.4.0",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.21.4",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "html-loader": "^1.3.2",
+    "html-webpack-plugin": "^5.0.0-alpha.6",
+    "prettier": "^2.1.2",
+    "standard-version": "^9.0.0",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.1.3",
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.2.0"
+  },
+  "scripts": {
+    "format": "prettier --write 'src/**/*.jsx' --write '*.js'",
+    "lint-fix": "eslint --fix",
+    "start": "webpack serve --config webpack.dev.js",
+    "test": "cypress run",
+    "build": "webpack --config webpack.prod.js",
+    "release-dry": "standard-version -- --dry-run",
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ab91@bitbucket.org/ab91/ab-engagency.frontendtest.git"
+  },
+  "author": "Abhra Biswas",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/ab91/ab-engagency.frontendtest#readme"
+}
