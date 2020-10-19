@@ -1,5 +1,6 @@
 # Base Directories
 node_modules/
+dist/
 
 # README
 README.md
