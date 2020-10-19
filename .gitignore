@@ -1,6 +1,9 @@
 # Base Directories
 node_modules/
 
+# README
+README.md
+
 # Vim Swap Files
 .*.sw[a-z]
 .sw[a-z]
