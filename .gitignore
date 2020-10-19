@@ -1,0 +1,6 @@
+# Base Directories
+node_modules/
+
+# Vim Swap Files
+.*.sw[a-z]
+.sw[a-z]
