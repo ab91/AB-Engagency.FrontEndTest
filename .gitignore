@@ -5,6 +5,11 @@ dist/
 # README
 README.md
 
+# Cypress
+cypress/screenshots/
+cypress/videos/
+cypress/integration/examples/
+
 # Vim Swap Files
 .*.sw[a-z]
 .sw[a-z]
