@@ -42,8 +42,10 @@ const FlexContainer = {
 
 const Header = () => {
   return (
-    <Flexbox id="social">
-      <Logo src="https://res.cloudinary.com/ab91/image/upload/v1603144357/Engagency%20Project/logo.png" />
+    <Flexbox>
+      <a href="https://www.engagency.com">
+        <Logo src="https://res.cloudinary.com/ab91/image/upload/v1603144357/Engagency%20Project/logo.png" />
+      </a>
       <div style={FlexContainer}>
         <StyledLink href="#" text="HOME" />
         <StyledLink href="#" text="PROJECTS" />
