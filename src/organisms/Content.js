@@ -7,9 +7,67 @@ import Feature from "../molecules/Feature";
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 30%);
   justify-content: space-around;
   margin: 5% 10%;
+
+  ${breakpoint("mobile")`
+  grid-template-rows: repeat(3, 1fr);
+    `}
+
+  ${breakpoint("tablet")`
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+    `}
+
+  ${breakpoint("desktop")`
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: 1fr;
+    `}
+`;
+
+const ItemOne = styled.div`
+  ${breakpoint("mobile")`
+  order: 2;
+    `}
+
+  ${breakpoint("tablet")`
+  order: 2;
+    `}
+
+  ${breakpoint("desktop")`
+  order: 1;
+    `}
+`;
+
+const ItemTwo = styled.div`
+  ${breakpoint("mobile")`
+  order: 3;
+  
+    `}
+
+  ${breakpoint("tablet")`
+  order: 1;
+  grid-column: 1 / -1;
+    `}
+
+  ${breakpoint("desktop")`
+  order: 2;
+  grid-column: span 1;
+    `}
+`;
+
+const ItemThree = styled.div`
+  ${breakpoint("mobile")`
+  order: 1;
+    `}
+
+  ${breakpoint("tablet")`
+  order: 3;
+    `}
+
+  ${breakpoint("desktop")`
+  order: 3;
+    `}
 `;
 
 const ArchitectureProps = {
@@ -39,9 +97,15 @@ const AuditsProps = {
 const Content = () => {
   return (
     <Grid>
-      <Feature {...ArchitectureProps} />
-      <Feature {...MaintenanceProps} />
-      <Feature {...AuditsProps} />
+      <ItemOne>
+        <Feature {...ArchitectureProps} />
+      </ItemOne>
+      <ItemTwo>
+        <Feature {...MaintenanceProps} />
+      </ItemTwo>
+      <ItemThree>
+        <Feature {...AuditsProps} />
+      </ItemThree>
     </Grid>
   );
 };
