@@ -18,24 +18,6 @@ const Flexbox = styled.div`
 
 const Logo = styled.img({});
 
-const Blurb = styled.h1`
-  font-family: baskerville;
-  font-weight: 550;
-  color: #0080d5;
-  flex: 1;
-  margin: auto 0;
-
-  ${breakpoint("mobile")`
-    font-size: 1.3em;
-    text-align: center;
-    padding-bottom: 20px;
-    `}
-
-  ${breakpoint("tablet")`
-    font-size: 1.5em;
-    `}
-`;
-
 const FlexContainer = {
   display: "flex",
 };
