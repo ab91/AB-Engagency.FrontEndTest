@@ -58,7 +58,7 @@ class Navigation extends React.Component {
         <Media>
           {({ breakpoints, currentBreakpoint }) =>
             breakpoints[currentBreakpoint] > breakpoints.tablet ? (
-              <nav style={FlexContainer}>
+              <nav data-cy="navigation" style={FlexContainer}>
                 <StyledLink href="#" text="HOME" />
                 <StyledLink href="#" text="PROJECTS" />
                 <StyledLink href="#" text="ABOUT US" />
