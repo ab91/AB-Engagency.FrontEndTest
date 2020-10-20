@@ -27,7 +27,7 @@ const Flexbox = styled.section`
 
 const Logo = styled.img`
   ${breakpoint("mobile")`
-    width: 65%;
+    width: 85%;
     `}
 
   ${breakpoint("tablet")`
