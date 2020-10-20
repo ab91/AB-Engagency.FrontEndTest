@@ -2,9 +2,6 @@
 node_modules/
 dist/
 
-# README
-README.md
-
 # Cypress
 cypress/screenshots/
 cypress/videos/
