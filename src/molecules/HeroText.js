@@ -43,10 +43,10 @@ const HeroText = (props) => {
         WELCOME TO <strong>ENGAGE</strong>NCY
       </Title>
       <Message>
-        We are a web developement company based in Austin, TX specializing in
+        We are a web development company based in Austin, TX specializing in
         the Sitecore
         <br />
-        CMS platform. we work hard, we play hard, and we eat lunch together.
+        CMS platform. We work hard, we play hard, and we eat lunch together.
       </Message>
       <div style={ButtonFlexbox}>
         <StyledButton padding={45} filled={true} text="Learn More" />
