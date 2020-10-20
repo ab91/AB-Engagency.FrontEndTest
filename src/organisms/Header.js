@@ -25,7 +25,15 @@ const Flexbox = styled.div`
   `}
 `;
 
-const Logo = styled.img({});
+const Logo = styled.img`
+  ${breakpoint("mobile")`
+    width: 65%;
+    `}
+
+  ${breakpoint("tablet")`
+    width: 100%;
+  `}
+`;
 
 const FlexContainer = {
   display: "flex",
@@ -63,6 +71,7 @@ class Header extends React.Component {
                 active={this.state.active}
                 burger="slider"
                 color="#FFFFFF"
+                scale={0.75}
                 hoverOpacity={0.9}
                 style={BurgerCSSReset}
               />
