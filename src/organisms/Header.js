@@ -16,8 +16,7 @@ const Flexbox = styled.div`
   height: 100px;
 `;
 
-const Logo = styled.img({
-});
+const Logo = styled.img({});
 
 const Blurb = styled.h1`
   font-family: baskerville;
