@@ -32,8 +32,12 @@ const Image = styled.img({
 
 const Header = styled.p`
   font-size: 18px;
-  color: #e24301;
+  color: #333333;
   font-weight: 550;
+
+  &:hover {
+    color: #e24301;
+  }
 `;
 
 const Description = styled.p`
