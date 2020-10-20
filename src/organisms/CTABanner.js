@@ -15,7 +15,7 @@ const Flexbox = styled.div`
   ${breakpoint("mobile")`
   flex-direction: column;
   justify-content: center;
-  height: 210px;
+  height: 240px;
     `}
 
   ${breakpoint("tablet")`
