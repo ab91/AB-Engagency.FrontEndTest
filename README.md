@@ -29,10 +29,6 @@ By Abe Biswas under [MIT License](./LICENSE).
 
 View application at [abe-eng.com](https://abe-eng.com/).
 
-<p align="center">
-  <img src="https://res.cloudinary.com/ab91/image/upload/v1602997961/gold-standard/default-placeholder-image.png" alt="Image Placeholder"/>
-</p>
-
 ### Local Installation
 
 To run locally, first install the necessary dependencies
