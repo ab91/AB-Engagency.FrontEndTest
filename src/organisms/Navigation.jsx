@@ -52,7 +52,7 @@ class Navigation extends React.Component {
   render() {
     return (
       <Flexbox>
-        <a href="https://www.engagency.com">
+        <a href="#">
           <Logo src="https://res.cloudinary.com/ab91/image/upload/v1603144357/Engagency%20Project/logo.png" />
         </a>
         <Media>
