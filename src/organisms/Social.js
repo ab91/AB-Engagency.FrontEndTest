@@ -3,6 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import breakpoint from "styled-components-breakpoint";
 
+// SVGs converted into React components and imported
 import SvgFacebookIcon from "../atoms/icons/facebook";
 import SvgLinkedinIcon from "../atoms/icons/linkedin";
 import SvgTwitterIcon from "../atoms/icons/twitter";

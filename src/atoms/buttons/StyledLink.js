@@ -20,6 +20,7 @@ const Link = styled.a`
   }
 `;
 
+// Single link assists with reusability of a single component
 const StyledLink = (props) => {
   return <Link href="#">{props.text}</Link>;
 };

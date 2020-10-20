@@ -4,11 +4,12 @@ import { ThemeProvider } from "styled-components";
 import ReactBreakpoints from "react-breakpoints";
 
 import Social from "./organisms/Social";
-import Header from "./organisms/Header";
+import Navigation from "./organisms/Navigation";
 import Hero from "./organisms/Hero";
 import CTABanner from "./organisms/CTABanner";
 import Content from "./organisms/Content";
 
+// Breakpoints for styled-components, CSS-in-JS library used
 const theme = {
   breakpoints: {
     mobile: 0,
@@ -17,12 +18,14 @@ const theme = {
   },
 };
 
+// Breakpoints for react-breakpoints, conditional rendering package
 const breakpoints = {
   mobile: 0,
   tablet: 768,
   desktop: 1025,
 };
 
+// Full app, with wrappers to pass the above properties
 const App = () => {
   return (
     <ReactBreakpoints breakpoints={breakpoints}>

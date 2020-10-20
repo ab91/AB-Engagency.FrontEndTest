@@ -70,6 +70,7 @@ const Text = styled.h4`
     `}
 `;
 
+// Displaying and hiding of break based on breakpoint
 const Break = styled.br`
   ${breakpoint("mobile")`
   display: static;

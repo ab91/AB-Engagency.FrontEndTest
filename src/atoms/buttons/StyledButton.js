@@ -6,6 +6,8 @@ import breakpoint from "styled-components-breakpoint";
 const Button = styled.button((props) => ({
   border: "1px solid #FFFFFF",
   borderRadius: "5px",
+
+  // Conditional CSS properties based on React props
   backgroundColor: props.filled ? "#FFFFFF" : "transparent",
   color: props.filled ? "#333333" : "#FFFFFF",
 
@@ -22,6 +24,7 @@ const Button = styled.button((props) => ({
   fontWeight: "350",
 }));
 
+// Single button assists with reusability of a single component
 const StyledButton = (props) => {
   return (
     <Button

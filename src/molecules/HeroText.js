@@ -57,6 +57,8 @@ const Message = styled.h2`
     `}
 `;
 
+// align-items property needed due to flex 
+// item behavior of expanding to width of container
 const ChildFlex = styled.section`
   display: flex;
   margin: 5px 0px;
@@ -73,6 +75,7 @@ const ChildFlex = styled.section`
   `};
 `;
 
+// Displaying and hiding of break based on breakpoint
 const Break = styled.br`
   ${breakpoint("mobile")`
   display: none;

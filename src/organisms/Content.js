@@ -27,6 +27,8 @@ const Grid = styled.main`
     `}
 `;
 
+// CSS Grid order rules responsible for re-ordering
+// items based on screen size
 const ItemOne = styled.article`
   ${breakpoint("mobile")`
   order: 2;
@@ -72,6 +74,8 @@ const ItemThree = styled.article`
     `}
 `;
 
+// Props passed down to Feature element
+// Assists with reusability of a single component
 const ArchitectureProps = {
   image:
     "https://res.cloudinary.com/ab91/image/upload/v1603149096/Engagency%20Project/Architecture.png",
