@@ -4,7 +4,7 @@ import styled from "styled-components";
 import breakpoint from "styled-components-breakpoint";
 
 const Link = styled.a`
-  padding: 12px;
+  margin: 12px;
   cursor: pointer;
   text-decoration: none;
 
@@ -14,9 +14,10 @@ const Link = styled.a`
   letter-spacing: 1.1px;
 
   &:hover {
-    text-decoration-line: underline;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 10px;
+    border-bottom-width: 3px;
+    border-color: white;
+    border-bottom-style: solid;
+    margin-bottom: 1px;
   }
 `;
 
