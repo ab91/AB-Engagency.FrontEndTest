@@ -9,7 +9,6 @@ const Flexbox = styled.div`
   align-items: center;
 
   font-family: Montserrat;
-  color: #333333;
   text-align: center;
   line-height: 1.5;
 `;
@@ -26,11 +25,14 @@ const Image = styled.img({
 const Header = styled.p`
   font-size: 18px;
   font-weight: 500;
+  color: #e24301;
 `;
 
 const Description = styled.p`
   font-size: 15px;
   font-weight: 300;
+  color: #333333;
+  margin-top: 0;
 `;
 
 const Feature = (props) => {
