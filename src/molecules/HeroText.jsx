@@ -54,7 +54,7 @@ const Message = styled.h2`
     `}
 `;
 
-// align-items property needed due to flex 
+// align-items property needed due to flex
 // item behavior of expanding to width of container
 const ChildFlex = styled.section`
   display: flex;
