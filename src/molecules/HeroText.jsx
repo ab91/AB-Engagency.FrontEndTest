@@ -60,7 +60,6 @@ const ChildFlex = styled.section`
   display: flex;
   margin: 5px 0px;
   align-items: flex-start;
-  gap: 20px;
 
   ${breakpoint("mobile")`
   flex-direction: column;
@@ -83,6 +82,17 @@ const Break = styled.br`
     `}
 `;
 
+const Wrapper = styled.div`
+  ${breakpoint("mobile")`
+  padding-top: 20px;
+    `}
+
+  ${breakpoint("tablet")`
+  padding-top: 0px;
+  padding-left: 35px;
+    `}
+`;
+
 const HeroText = (props) => {
   return (
     <ParentFlex>
@@ -97,7 +107,9 @@ const HeroText = (props) => {
       </Message>
       <ChildFlex>
         <StyledButton padding={45} filled={true} text="Learn More" />
-        <StyledButton padding={45} text="Get in Touch" />
+        <Wrapper>
+          <StyledButton padding={45} text="Get in Touch" />
+        </Wrapper>
       </ChildFlex>
     </ParentFlex>
   );
