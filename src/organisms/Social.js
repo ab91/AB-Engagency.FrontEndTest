@@ -12,7 +12,6 @@ const Flexbox = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 55px;
 
   background-color: #333333;
   height: 50px;
@@ -21,6 +20,14 @@ const Flexbox = styled.div`
   font-weight: 300;
   letter-spacing: 1.1px;
   color: white;
+
+  ${breakpoint("mobile")`
+  padding: 0px 20px;
+    `}
+
+  ${breakpoint("tablet")`
+  padding: 0px 55px;
+  `}
 `;
 
 const FlexContainer = {
