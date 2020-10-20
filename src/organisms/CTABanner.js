@@ -21,8 +21,10 @@ const Flexbox = styled.div`
 const CTABanner = () => {
   return (
     <Flexbox>
-      We make the web a better place. View our work to find out how.
-      <StyledButton text="Our Projects" />
+      <h4 style={TextStyle}>
+        We make the web a better place. View our work to find out how.
+      </h4>
+      <StyledButton padding={100} filled={false} text="Our Projects" url="#" />
     </Flexbox>
   );
 };

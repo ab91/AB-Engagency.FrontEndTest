@@ -49,8 +49,8 @@ const HeroText = (props) => {
         CMS platform. we work hard, we play hard, and we eat lunch together.
       </Message>
       <div style={ButtonFlexbox}>
-        <StyledButton text="Learn More" />
-        <StyledButton text="Get in Touch" />
+        <StyledButton padding={45} filled={true} text="Learn More" />
+        <StyledButton padding={50} text="Get in Touch" />
       </div>
     </Wrapper>
   );
