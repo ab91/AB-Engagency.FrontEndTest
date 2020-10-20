@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import styled from "styled-components";
-import breakpoint from "styled-components-breakpoint";
+import styled from 'styled-components';
+import breakpoint from 'styled-components-breakpoint';
 
 // SVGs converted into React components and imported
-import SvgFacebookIcon from "../atoms/icons/facebook";
-import SvgLinkedinIcon from "../atoms/icons/linkedin";
-import SvgTwitterIcon from "../atoms/icons/twitter";
+import SvgFacebookIcon from '../atoms/icons/facebook';
+import SvgLinkedinIcon from '../atoms/icons/linkedin';
+import SvgTwitterIcon from '../atoms/icons/twitter';
 
 const Flexbox = styled.section`
   display: flex;
@@ -22,32 +22,32 @@ const Flexbox = styled.section`
   letter-spacing: 1.1px;
   color: white;
 
-  ${breakpoint("mobile")`
+  ${breakpoint('mobile')`
   padding: 0px 20px;
     `}
 
-  ${breakpoint("tablet")`
+  ${breakpoint('tablet')`
   padding: 0px 55px;
   `}
 `;
 
 const Number = styled.h3`
-  ${breakpoint("mobile")`
+  ${breakpoint('mobile')`
   font-size: 14px;
   font-weight: normal;
   `}
 
-  ${breakpoint("tablet")`
+  ${breakpoint('tablet')`
   font-size: 17px;
     `}
 `;
 
 const FlexContainer = {
-  display: "flex",
+  display: 'flex',
 };
 
 const SVGButtonStyle = {
-  padding: "0px 5px",
+  padding: '0px 5px',
 };
 
 const Social = () => {
@@ -56,17 +56,17 @@ const Social = () => {
       <Number>Call us at: (888) 303-7332</Number>
       <nav style={FlexContainer}>
         <div style={SVGButtonStyle}>
-          <a href="#">
+          <a href='#'>
             <SvgFacebookIcon />
           </a>
         </div>
         <div style={SVGButtonStyle}>
-          <a href="#">
+          <a href='#'>
             <SvgLinkedinIcon />
           </a>
         </div>
         <div style={SVGButtonStyle}>
-          <a href="#">
+          <a href='#'>
             <SvgTwitterIcon />
           </a>
         </div>
