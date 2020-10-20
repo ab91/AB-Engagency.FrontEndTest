@@ -18,9 +18,6 @@ const ParentFlex = styled.section`
   margin: 0 10%;
     `}
 
-  ${breakpoint("tablet")`
-    `}
-
   ${breakpoint("desktop")`
   margin-left: 18%;
     `}

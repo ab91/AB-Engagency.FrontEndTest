@@ -13,15 +13,15 @@ const Flexbox = styled.div`
   line-height: 1.5;
 
   ${breakpoint("mobile")`
-padding: 0px 25px;  
+    padding: 0px 25px;  
     `}
 
   ${breakpoint("tablet")`
-padding: 0px 20px; 
+    padding: 0px 20px; 
     `}
 
   ${breakpoint("desktop")`
-padding: 0; 
+    padding: 0; 
     `}
 `;
 

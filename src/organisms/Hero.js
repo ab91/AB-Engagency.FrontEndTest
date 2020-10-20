@@ -21,9 +21,6 @@ const BackgroundDiv = styled.section`
   ${breakpoint("tablet")`
   height: 500px;
     `}
-
-  ${breakpoint("desktop")`
-    `}
 `;
 
 const Hero = () => {
