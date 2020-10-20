@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://bitbucket.org/ab91/ab-engagency.frontendtest/compare/v1.2.0...v1.3.0) (2020-10-20)
+
+
+### Features
+
+* Makes SVGs semantic links, sizes phone number properly ([8553ba4](https://bitbucket.org/ab91/ab-engagency.frontendtest/commit/8553ba4be5561aecfed7b3194ae1495451d0997e))
+
+
+### Bug Fixes
+
+* Corrects typos in Hero message ([c106249](https://bitbucket.org/ab91/ab-engagency.frontendtest/commit/c106249bf1a9c03d40768a8ba10fa1bce41591d5))
+
 ## [1.2.0](https://bitbucket.org/ab91/ab-engagency.frontendtest/compare/v1.1.0...v1.2.0) (2020-10-20)
 
 
