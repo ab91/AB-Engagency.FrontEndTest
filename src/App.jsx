@@ -20,6 +20,7 @@ const theme = {
 const breakpoints = {
   mobile: 0,
   tablet: 768,
+  desktop: 1025,
 };
 
 const App = () => {

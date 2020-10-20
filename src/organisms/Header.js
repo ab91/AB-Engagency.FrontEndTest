@@ -50,7 +50,7 @@ class Header extends React.Component {
         </a>
         <Media>
           {({ breakpoints, currentBreakpoint }) =>
-            breakpoints[currentBreakpoint] > breakpoints.mobile ? (
+            breakpoints[currentBreakpoint] > breakpoints.tablet ? (
               <div style={FlexContainer}>
                 <StyledLink href="#" text="HOME" />
                 <StyledLink href="#" text="PROJECTS" />
