@@ -11,6 +11,8 @@ const Button = styled.a((props) => ({
   backgroundColor: props.filled ? "#FFFFFF" : "transparent",
   color: props.filled ? "#333333" : "#FFFFFF",
 
+  display: "block",
+
   paddingTop: "12px",
   paddingBottom: "12px",
   paddingLeft: props.padding,

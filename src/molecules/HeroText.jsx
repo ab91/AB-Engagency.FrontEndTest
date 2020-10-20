@@ -59,11 +59,10 @@ const Message = styled.h2`
 const ChildFlex = styled.section`
   display: flex;
   margin: 5px 0px;
-  align-items: flex-start;
+  text-align: center;
 
   ${breakpoint("mobile")`
   flex-direction: column;
-  align-items: center;
   `}
 
   ${breakpoint("tablet")`
@@ -82,14 +81,19 @@ const Break = styled.br`
     `}
 `;
 
-const Wrapper = styled.div`
+const WrapperOne = styled.div`
   ${breakpoint("mobile")`
-  padding-top: 20px;
+    padding-top: 12px;
+    `}
+`;
+
+const WrapperTwo = styled.div`
+  ${breakpoint("mobile")`
+    padding-top: 12px;
     `}
 
   ${breakpoint("tablet")`
-  padding-top: 0px;
-  padding-left: 35px;
+    margin-left: 20px;
     `}
 `;
 
@@ -106,10 +110,12 @@ const HeroText = (props) => {
         CMS platform. We work hard, we play hard, and we eat lunch together.
       </Message>
       <ChildFlex>
-        <StyledButton padding={45} filled={true} text="Learn More" />
-        <Wrapper>
+        <WrapperOne>
+          <StyledButton padding={45} filled={true} text="Learn More" />
+        </WrapperOne>
+        <WrapperTwo>
           <StyledButton padding={45} text="Get in Touch" />
-        </Wrapper>
+        </WrapperTwo>
       </ChildFlex>
     </ParentFlex>
   );
