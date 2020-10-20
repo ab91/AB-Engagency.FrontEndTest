@@ -11,6 +11,18 @@ const Flexbox = styled.div`
   font-family: Montserrat;
   text-align: center;
   line-height: 1.5;
+
+  ${breakpoint("mobile")`
+padding: 0px 25px;  
+    `}
+
+  ${breakpoint("tablet")`
+padding: 0px 20px; 
+    `}
+
+  ${breakpoint("desktop")`
+padding: 0; 
+    `}
 `;
 
 const Image = styled.img({
@@ -24,8 +36,8 @@ const Image = styled.img({
 
 const Header = styled.p`
   font-size: 18px;
-  font-weight: 500;
   color: #e24301;
+  font-weight: 550;
 `;
 
 const Description = styled.p`
