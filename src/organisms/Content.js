@@ -8,20 +8,22 @@ import Feature from "../molecules/Feature";
 const Grid = styled.div`
   display: grid;
   justify-content: space-around;
-  margin: 5% 10%;
 
   ${breakpoint("mobile")`
   grid-template-rows: repeat(3, 1fr);
+  margin: 60px 0px;
     `}
 
   ${breakpoint("tablet")`
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  margin: 5% 10%;
     `}
 
   ${breakpoint("desktop")`
   grid-template-columns: repeat(3, 30%);
   grid-template-rows: 1fr;
+  margin: 5% 10%;
     `}
 `;
 
