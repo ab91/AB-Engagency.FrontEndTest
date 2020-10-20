@@ -7,7 +7,7 @@ import breakpoint from "styled-components-breakpoint";
 import { Media } from "react-breakpoints";
 import Burger from "react-css-burger";
 
-const Flexbox = styled.div`
+const Flexbox = styled.section`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -43,14 +43,13 @@ const BurgerCSSReset = {
   margin: "0",
 };
 
-class Header extends React.Component {
+class Navigation extends React.Component {
+  // State used for react hamburger active and inactive statuses
   state = {
     active: false,
   };
 
   render() {
-    const { breakpoints, currentBreakpoint } = this.props;
-
     return (
       <Flexbox>
         <a href="https://www.engagency.com">
@@ -59,12 +58,12 @@ class Header extends React.Component {
         <Media>
           {({ breakpoints, currentBreakpoint }) =>
             breakpoints[currentBreakpoint] > breakpoints.tablet ? (
-              <div style={FlexContainer}>
+              <nav style={FlexContainer}>
                 <StyledLink href="#" text="HOME" />
                 <StyledLink href="#" text="PROJECTS" />
                 <StyledLink href="#" text="ABOUT US" />
                 <StyledLink href="#" text="CONTACT" />
-              </div>
+              </nav>
             ) : (
               <Burger
                 onClick={() => this.setState({ active: !this.state.active })}
@@ -83,4 +82,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header;
+export default Navigation;
