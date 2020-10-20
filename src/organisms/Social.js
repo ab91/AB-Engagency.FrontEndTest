@@ -30,6 +30,16 @@ const Flexbox = styled.div`
   `}
 `;
 
+const Number = styled.p`
+  ${breakpoint("mobile")`
+  font-size: 14px;
+  `}
+
+  ${breakpoint("tablet")`
+  font-size: 17px;
+    `}
+`;
+
 const FlexContainer = {
   display: "flex",
 };
@@ -41,16 +51,22 @@ const SVGButtonStyle = {
 const Social = () => {
   return (
     <Flexbox>
-      <p>Call us at: (888) 303-7332</p>
+      <Number>Call us at: (888) 303-7332</Number>
       <div style={FlexContainer}>
         <div style={SVGButtonStyle}>
-          <SvgFacebookIcon />
+          <a href="#">
+            <SvgFacebookIcon />
+          </a>
         </div>
         <div style={SVGButtonStyle}>
-          <SvgLinkedinIcon />
+          <a href="#">
+            <SvgLinkedinIcon />
+          </a>
         </div>
         <div style={SVGButtonStyle}>
-          <SvgTwitterIcon />
+          <a href="#">
+            <SvgTwitterIcon />
+          </a>
         </div>
       </div>
     </Flexbox>
