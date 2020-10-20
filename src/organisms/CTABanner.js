@@ -11,6 +11,7 @@ const Flexbox = styled.div`
   align-items: center;
 
   background-color: #e24301;
+  box-shadow: 0px 2px 5px grey;
   height: 120px;
 
   font-family: Montserrat;
