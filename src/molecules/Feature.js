@@ -28,10 +28,6 @@ padding: 0;
 const Image = styled.img({
   height: "100px",
   width: "100px",
-  //maxHeight: "100%",
-  //maxWidth: "80%",
-  //display: "block",
-  //margin: "2% auto",
 });
 
 const Header = styled.p`
@@ -42,7 +38,7 @@ const Header = styled.p`
 
 const Description = styled.p`
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 450;
   color: #333333;
   margin-top: 0;
 `;
