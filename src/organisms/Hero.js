@@ -12,8 +12,18 @@ const BackgroundDiv = styled.div`
   position: relative;
   background-repeat: no-repeat;
 
-  height: 500px;
   width: 100%;
+
+  ${breakpoint("mobile")`
+  height: 550px;
+    `}
+
+  ${breakpoint("tablet")`
+  height: 500px;
+    `}
+
+  ${breakpoint("desktop")`
+    `}
 `;
 
 const Hero = () => {

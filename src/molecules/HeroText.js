@@ -5,7 +5,7 @@ import breakpoint from "styled-components-breakpoint";
 
 import StyledButton from "../atoms/buttons/StyledButton";
 
-const Wrapper = styled.div`
+const ParentFlex = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -14,7 +14,16 @@ const Wrapper = styled.div`
   font-family: Montserrat;
   color: white;
 
+  ${breakpoint("mobile")`
+  margin: 0 10%;
+    `}
+
+  ${breakpoint("tablet")`
+    `}
+
+  ${breakpoint("desktop")`
   margin-left: 18%;
+    `}
 `;
 
 const Title = styled.h1`
@@ -22,37 +31,75 @@ const Title = styled.h1`
   font-size: 40px;
   font-weight: 375;
   letter-spacing: 2px;
+
+  ${breakpoint("mobile")`
+  text-align: center;
+    `}
+
+  ${breakpoint("desktop")`
+  text-align: left;
+    `}
 `;
 
 const Message = styled.h2`
   margin: 16px 0px;
   font-size: 18px;
-  font-weight: 350;
   line-height: 1.5;
+
+  ${breakpoint("mobile")`
+  font-weight: 400;
+  text-align: center;
+    `}
+
+  ${breakpoint("tablet")`
+  text-align: left;
+  font-weight: 350;
+    `}
 `;
 
-const ButtonFlexbox = {
-  display: "flex",
-  flexDirection: "row",
-};
+const ChildFlex = styled.div`
+  display: flex;
+  margin: 5px 0px;
+  align-items: flex-start;
+  gap: 20px;
+
+  ${breakpoint("mobile")`
+  flex-direction: column;
+  align-items: center;
+  `}
+
+  ${breakpoint("tablet")`
+  flex-direction: row;
+  `};
+`;
+
+const Break = styled.br`
+  ${breakpoint("mobile")`
+  display: none;
+    `}
+
+  ${breakpoint("tablet")`
+  display: static;
+    `}
+`;
 
 const HeroText = (props) => {
   return (
-    <Wrapper>
+    <ParentFlex>
       <Title>
-        WELCOME TO <strong>ENGAGE</strong>NCY
+        WELCOME TO <Break />
+        <strong>ENGAGE</strong>NCY
       </Title>
       <Message>
-        We are a web development company based in Austin, TX specializing in
-        the Sitecore
-        <br />
+        We are a web development company based in Austin, TX specializing in the
+        Sitecore <Break />
         CMS platform. We work hard, we play hard, and we eat lunch together.
       </Message>
-      <div style={ButtonFlexbox}>
+      <ChildFlex>
         <StyledButton padding={45} filled={true} text="Learn More" />
-        <StyledButton padding={50} text="Get in Touch" />
-      </div>
-    </Wrapper>
+        <StyledButton padding={45} text="Get in Touch" />
+      </ChildFlex>
+    </ParentFlex>
   );
 };
 
