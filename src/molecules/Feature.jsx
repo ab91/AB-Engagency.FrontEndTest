@@ -45,6 +45,18 @@ const Description = styled.h4`
   font-weight: 450;
   color: #333333;
   margin-top: 0;
+
+  ${breakpoint("mobile")`
+  margin-bottom: 30px;
+  `}
+
+  ${breakpoint("tablet")`
+  margin-bottom: 0px;
+  `};
+
+  ${breakpoint("desktop")`
+  margin-bottom: 20px;
+  `};
 `;
 
 const Feature = (props) => {
