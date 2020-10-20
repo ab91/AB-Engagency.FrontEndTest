@@ -27,8 +27,10 @@ const App = () => {
   return (
     <ReactBreakpoints breakpoints={breakpoints}>
       <ThemeProvider theme={theme}>
-        <Social />
-        <Header />
+        <header>
+          <Social />
+          <Navigation />
+        </header>
         <Hero />
         <CTABanner />
         <Content />

@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import breakpoint from "styled-components-breakpoint";
 
-const Button = styled.a((props) => ({
+const Button = styled.button((props) => ({
   border: "1px solid #FFFFFF",
   borderRadius: "5px",
   backgroundColor: props.filled ? "#FFFFFF" : "transparent",

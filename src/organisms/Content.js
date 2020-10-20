@@ -5,7 +5,7 @@ import breakpoint from "styled-components-breakpoint";
 
 import Feature from "../molecules/Feature";
 
-const Grid = styled.div`
+const Grid = styled.main`
   display: grid;
   justify-content: space-around;
 
@@ -27,7 +27,7 @@ const Grid = styled.div`
     `}
 `;
 
-const ItemOne = styled.div`
+const ItemOne = styled.article`
   ${breakpoint("mobile")`
   order: 2;
     `}
@@ -41,7 +41,7 @@ const ItemOne = styled.div`
     `}
 `;
 
-const ItemTwo = styled.div`
+const ItemTwo = styled.article`
   ${breakpoint("mobile")`
   order: 3;
   
@@ -58,7 +58,7 @@ const ItemTwo = styled.div`
     `}
 `;
 
-const ItemThree = styled.div`
+const ItemThree = styled.article`
   ${breakpoint("mobile")`
   order: 1;
     `}

@@ -30,7 +30,7 @@ const Image = styled.img({
   width: "100px",
 });
 
-const Header = styled.p`
+const Header = styled.h2`
   font-size: 18px;
   color: #333333;
   font-weight: 550;
@@ -40,7 +40,7 @@ const Header = styled.p`
   }
 `;
 
-const Description = styled.p`
+const Description = styled.h4`
   font-size: 15px;
   font-weight: 450;
   color: #333333;

@@ -7,7 +7,7 @@ import SvgFacebookIcon from "../atoms/icons/facebook";
 import SvgLinkedinIcon from "../atoms/icons/linkedin";
 import SvgTwitterIcon from "../atoms/icons/twitter";
 
-const Flexbox = styled.div`
+const Flexbox = styled.section`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -30,9 +30,10 @@ const Flexbox = styled.div`
   `}
 `;
 
-const Number = styled.p`
+const Number = styled.h3`
   ${breakpoint("mobile")`
   font-size: 14px;
+  font-weight: normal;
   `}
 
   ${breakpoint("tablet")`
@@ -52,7 +53,7 @@ const Social = () => {
   return (
     <Flexbox>
       <Number>Call us at: (888) 303-7332</Number>
-      <div style={FlexContainer}>
+      <nav style={FlexContainer}>
         <div style={SVGButtonStyle}>
           <a href="#">
             <SvgFacebookIcon />
@@ -68,7 +69,7 @@ const Social = () => {
             <SvgTwitterIcon />
           </a>
         </div>
-      </div>
+      </nav>
     </Flexbox>
   );
 };

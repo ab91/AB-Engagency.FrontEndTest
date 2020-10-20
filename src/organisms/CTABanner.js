@@ -5,7 +5,7 @@ import breakpoint from "styled-components-breakpoint";
 
 import StyledButton from "../atoms/buttons/StyledButton";
 
-const Flexbox = styled.div`
+const Flexbox = styled.section`
   display: flex;
   align-items: center;
 

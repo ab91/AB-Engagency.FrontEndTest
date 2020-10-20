@@ -5,7 +5,7 @@ import breakpoint from "styled-components-breakpoint";
 
 import StyledButton from "../atoms/buttons/StyledButton";
 
-const ParentFlex = styled.div`
+const ParentFlex = styled.section`
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -57,7 +57,7 @@ const Message = styled.h2`
     `}
 `;
 
-const ChildFlex = styled.div`
+const ChildFlex = styled.section`
   display: flex;
   margin: 5px 0px;
   align-items: flex-start;
